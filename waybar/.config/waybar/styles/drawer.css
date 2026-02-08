@@ -1,0 +1,28 @@
+/* Drawer children hidden by default */
+#group-drawer .drawer-child {
+  min-width: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* Expanded drawer */
+#group-drawer.expanded .drawer-child {
+  /* min-width: 32px; */
+  opacity: 1;
+  margin: 0 4px;
+}
+
+/* Toggle button style */
+#custom-drawer-toggle {
+  padding: 0 8px;
+}
+
+/* App buttons */
+    #custom-app-colorpicker,
+    #custom-app-screenshot-o,
+    #custom-app-screenshot-w,
+    #custom-app-screenshot-r {
+  padding: 0 6px;
+}

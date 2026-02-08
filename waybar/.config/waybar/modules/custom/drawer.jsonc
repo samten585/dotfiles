@@ -1,0 +1,53 @@
+{
+// "group/drawer": {
+//   "orientation": "horizontal",
+//   "drawer": {
+//     "transition-duration": 300,
+//     "children-class": "drawer-child"
+//   },
+//   "modules": [
+//     "custom/drawer-toggle",
+//     "custom/app-colorpicker",
+//     "custom/app-screenshot-o",
+//     "custom/app-screenshot-w",
+//     "custom/app-screenshot-r"
+//   ]
+// },
+
+// "custom/drawer-toggle": {
+//   "format": "󰍜",
+//   "tooltip": "Apps"
+// },
+
+// "custom/app-colorpicker": {
+//   "format": " Color",
+//   "tooltip": false,
+//   "on-click": "hyprpicker -a"
+// },
+
+// "custom/app-screenshot-o": {
+//   "format": "󰹑 All",
+//   "tooltip": false,
+//   "on-click": "hyprshot -m output -o ~/Pictures/screenshots/"
+// },
+
+// "custom/app-screenshot-w": {
+//   "format": "󰨵 Window",
+//   "tooltip": false,
+//   "on-click": "hyprshot -m window -o ~/Pictures/screenshots/"
+// },
+
+// "custom/app-screenshot-r": {
+//   "format": "󱣴 Region",
+//   "tooltip": false,
+//   "on-click": "hyprshot -m region -o ~/Pictures/screenshots/"
+// }
+
+"custom/menu": {
+    "format": "󰍜 ",
+    "tooltip": false,
+    "on-click": "/home/samer/.config/waybar/scripts/menu.sh"
+    //"on-click": "opts=' clipboard\n Color\n󰹑 Screenshot All\n󰨵 Screenshot Window\n󱣴 Screenshot Region'; target=$(echo -e \"$opts\" | rofi -theme /home/samer/.config/rofi/applets/type-1/style-1.rasi -dmenu -p 'Tools' -hover-select -me-select-entry '' -me-accept-entry MousePrimary); case \"$target\" in ' clipboard') cliphist list | rofi -dmenu -theme /home/samer/.config/rofi/applets/type-1/style-2.rasi -hover-select -me-select-entry '' -me-accept-entry MousePrimary | cliphist decode | wl-copy ;; ' Color') hyprpicker -a ;; '󰹑 Screenshot All') hyprshot -m output -o ~/Pictures/screenshots/ ;; '󰨵 Screenshot Window') hyprshot -m window -o ~/Pictures/screenshots/ ;; '󱣴 Screenshot Region') hyprshot -m region -o ~/Pictures/screenshots/ ;; esac"
+}
+
+}

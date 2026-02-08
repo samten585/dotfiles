@@ -1,0 +1,33 @@
+{
+	"custom/distro": {
+		// "exec":
+		// "exec-if":
+		// "exec-on-event":
+		// "hide-empty-text":
+		// "return-type":
+		// "interval":
+		// "restart-interval":
+		// "signal":
+		"format": "󰣇",
+		// "format-icons":
+		// "rotate":
+		// "min-length":
+		// "max-length":
+		// "align":
+		// "justify":
+		"on-click": "rofi -show drun -theme /home/samer/.config/rofi/launchers/type-6/style-10 -hover-select -me-select-entry '' -me-accept-entry MousePrimary",
+		// "on-click-middle":
+		// "on-click-right":
+		// "on-update":
+		// "on-scroll-up":
+		// "on-scroll-down":
+		// "smooth-scrolling-threshold":
+		"tooltip": false
+		// "tooltip-format":
+		// "escape":
+		// "menu":
+		// "menu-file":
+		// "menu-actions":
+		// "expand":
+	}
+}
