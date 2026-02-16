@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles configrations
+My dotfiles Configrations
